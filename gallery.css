@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'papyrus';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*************NAVIGATION BAR********************/
+nav{
+    height: 60px;
+    width: 100%;
+    background: rgb(85, 144, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+    margin: 5px 50px;
+    transition: all .2s ease-in-out;
+}
+nav ul li:hover{
+    background-color: rgb(243, 149, 149);
+
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    font-size: 30px;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+section h1{
+    text-align: center;
+}
+.container{
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img{
+    height: 500px;
+    margin: 10px;
+}
+

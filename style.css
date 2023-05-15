@@ -1,0 +1,290 @@
+/******************GENERAL******************/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'papyrus';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/***************NAVIGATION BAR********************/
+nav{
+    height: 60px;
+    width: 100%;
+    background: rgb(85, 144, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    position: fixed;
+    z-index: 10;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+nav ul li{
+    float: left;
+    margin: 5px 50px;   
+    transition: all .2s ease-in-out;
+}
+nav ul li:hover{
+    background-color: rgb(243, 149, 149);
+
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    font-size: 30px;
+    color: white;
+}
+/*************HOME SECTION*******************/
+main .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    flex-direction: column;
+}
+
+main .home .container{
+    display: flex;
+    background-image: url(image/background.jpg);
+    width: 90vw;
+    background-size: cover;
+    border: 2px inset;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;  
+}
+main .home .tagline{
+    font-size: 50px;
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(99, 255, 109);
+    transition: all .3s ease;
+    border-bottom: 2px outset purple;
+    border-right: 2px outset purple;
+    text-shadow: 1px 1px 1px purple;
+}
+main .home .tagline:hover{
+    transform: scale(1.2);
+}
+
+
+main .home button{
+    padding:5px 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(241, 7, 241);
+    border: 2px outset white;
+    transition: all .3s ease;
+}
+main .home button:hover{
+    transform: scale(1.2);
+}
+main .home .container .title h1{
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px purple;
+}
+main .home .container .logo img{
+    width: 30rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 3px outset rgb(242, 47, 210);
+}
+
+
+/******************About section***************************/
+main .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 1000px;
+    background-color: rgb(137, 203, 247);
+}
+
+main .about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .about .container .left{
+    height: 600px;
+    width: 800px;
+    background: rgb(106, 106, 106);
+    margin-right: 20px;
+    position: relative;
+}
+main .about .container .left img{
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+}
+main .about .container .left p{
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    bottom: -5%;
+    left: 35%;
+    text-shadow: 1px 1px 1px purple;
+    
+}
+
+main .about .container .right{
+    height: 600px;
+    width: 800px;
+    background: rgb(218, 218, 222);
+    text-align: justify;
+    padding: 0 20px;
+}
+main .about .container h1{
+    font-size: 50px;
+    text-align: center;
+}
+main .about .container h3{
+    font-size: 40px;
+}
+main .about .container p{
+    font-size: 35px;
+}
+
+
+
+
+
+/*******************Gallery section*************************/
+main .gallery{
+    display: flex;
+    background-size: cover;
+    height: max-content;
+    background-color: skyblue;
+    flex-direction: column;
+    text-align: center;
+    font-size: larger;
+}
+main .gallery .container{
+    display: flex;
+    width:90vw;
+    flex-wrap: wrap;
+    height: max-content;
+    background-color: white;
+    margin: -5px auto 20px auto;
+    justify-content: space-evenly;
+}
+
+main .gallery .container .flower h1{
+    text-align: start;
+    margin-top: -60px;
+    margin-left: 50px;
+    font-size: 30px;
+    color: white;
+}
+main .gallery .container a{
+    text-decoration: none;
+    text-shadow: 2px 2px 8px black;
+    z-index: 9;
+}
+main .gallery .container .flower img{
+    width: 400px;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    transition: all .1s ease;
+}
+main .gallery .container .flower img:hover{
+    transform: scale(1.1);
+}
+/******************Contact section************************/
+main .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 0;
+}
+main .contact .container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.socmed{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: -30px 0;
+    
+
+}
+.socmed img{
+    width: 20px;
+    aspect-ratio: 1/1;
+    margin-right: 10px;
+}
+.feedback{
+    width: max-content;
+    border: none;
+    border-left: 1px solid;
+    padding: 20px;
+}
+
+.feedback input{
+    width: 500px;
+    height: 20px;
+    margin-left: 10px;
+}
+.feedback .form{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.feedback .btn{
+    width: max-content;
+    padding: 5px 10px;
+    height: 30px;
+    margin: auto;
+    background-color: skyblue;
+}
+
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: 1px outset black;
+  outline: none;
+  background-color: rgb(85, 144, 255); 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 50%; 
+  font-size: 18px;
+  transition: all .3s ease;
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
+
+
+
+
